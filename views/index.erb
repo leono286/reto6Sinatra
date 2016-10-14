@@ -19,7 +19,7 @@
 		<div class="jumbotron">					
 			<form method="post" action="/">
 				<h2>Mi cuenta es <%= @count %></h2>
-				<input type="hidden" name="count" value="<%= @count %>">
+				<input type="hidden" name="count" value="<%= @count.to_i + 1 %>">
 				<input type="submit" class="btn btn-primary" value="Suma!">
 			</form>
 		</div>

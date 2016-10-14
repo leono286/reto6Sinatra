@@ -6,6 +6,6 @@ get '/' do
 end
 
 post '/' do
-	@count = params[:count].to_i + 1
+	@count = params[:count]
 	erb :index
 end
